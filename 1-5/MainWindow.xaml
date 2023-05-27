@@ -1,0 +1,82 @@
+﻿<Window x:Class="_1_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1_5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Grid>
+        <StackPanel Margin="0 20 0 0">
+           
+
+            <TextBlock Text="Имя"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Margin="0 10 0 0"/>
+            <TextBox x:Name="TbFName"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Width="300"
+                       Margin="0 10 0 0"/>
+
+            <TextBlock Text="Фамилия"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Margin="0 10 0 0"/>
+            <TextBox x:Name="TbLName"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Width="300"
+                       Margin="0 10 0 0"/>
+
+            <TextBlock Text="Отчество"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Margin="0 10 0 0"/>
+            <TextBox x:Name="TbMName"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Width="300"
+                       Margin="0 10 0 0"/>
+
+            <TextBlock Text="Телефон"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Margin="0 10 0 0"/>
+            <TextBox x:Name="TbPhone"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Width="300"
+                       Margin="0 10 0 0"/>
+
+            <TextBlock Text="Почта"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Margin="0 10 0 0"/>
+            <TextBox x:Name="TbMail"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Width="300"
+                       Margin="0 10 0 0"/>
+            <TextBlock Text="Пол"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Margin="0 10 0 0"/>
+            <ComboBox x:Name="CmbGender" Width="150"
+                      Height="50"
+                      Margin="0 10 0 0"
+                      FontSize="20">
+                <ComboBoxItem Tag="M" Content="Мужской" FontSize="20"/>
+                <ComboBoxItem Tag="Ж" Content="Женский" FontSize="20"/>
+            </ComboBox>
+
+            <Button x:Name="BtnAdd"
+                    Width="150"
+                    Height="50"
+                    Margin="0 10 0 0"
+                    Content="Добавить"
+                    FontSize="20" Click="BtnAdd_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
